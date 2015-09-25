@@ -46,7 +46,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8a7a7', end
 	border-radius: 0 0 5px 5px;
 	box-shadow: 0 0.5px 5px #c4c4c4;
 	padding-top: 25px;
-	padding-left: 60px;
+
 	padding-bottom: 10px;
 }
 
@@ -57,7 +57,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8a7a7', end
 	border: 9px solid #f5f4f2;
 	box-shadow: 0 0 0.5px #000;
 	margin-top: 20px;
-	margin-left: -15px;
+	margin-left: 40px;
 }
 
 .image-wrap {
@@ -68,15 +68,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8a7a7', end
 
 .worksheet-wrap {
 	float:right;
-/*	width: 71%;*/
-	margin-top: -12px;
-	margin-right: 25px;
+	width: 440px;
+	margin-top: -9px;
+	margin-right: 20px;
+	font-size: 0.9em;
 }
 .worksheet-item{
 
 	color: #727070;
+	margin-bottom: 4.2px;
+}
 
-	margin-bottom: 4px;
+.worksheet-item:last-child {
+	margin-top: 20px;
 }
 
 .worksheet-list{
@@ -84,29 +88,54 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8a7a7', end
 	list-style: none;
 }
 .worksheet-what {
+	vertical-align: top;
 		font-family: open_sans_semibold;
+
 	display: inline-block;
 }
 .worksheet-info {
 		font-family: open_sans_regular;
+
 	display: inline-block;
 }
 .skill-list{
+	display: inline-block;
 	margin-left: -30px;
+	width: 200px;
+	height: auto;
 }
 .skill-item {
 	display: inline;
 	margin-right: 5px;
 
 }
-
-.aboutbox-item.icon-work {
-	/*margin-left: 60px;*/
-	margin-top: 0;
-	margin-bottom: 15px;
- list-style-image: url(image/work.png);
+.aboutbox-list{
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+	font-size: 0.9em;
+	margin-top: 15px;
 }
 
+.aboutbox-item {
+	padding-left: 135px;
+	margin-bottom: 40px;
+	min-height: 55px;
+
+
+}
+.aboutbox-item.icon-work{
+background: url(image/work.png) no-repeat;
+background-position: 40px -2px;
+}
+.aboutbox-item.icon-college{
+background: url(image/study_one.png) no-repeat;
+background-position: 40px -2px;
+}
+.aboutbox-item.icon-college.last{
+background: url(image/study_two.png) no-repeat;
+background-position: 40px -2px;
+}
 .where {
 	font-family: open_sans_semibold;
 	color:  #727070;
@@ -117,12 +146,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8a7a7', end
 	font-family: open_sans_regular;
 	color:  #727070;
 	font-size: ;
-}
-.aboutbox-item.icon-college{
- list-style-image: url(image/study_two.png);
-}
-
-.aboutbox-item.icon-college:first-child {
- list-style-image: url(image/study_one.png);
 }
 

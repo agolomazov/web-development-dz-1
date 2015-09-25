@@ -21,16 +21,21 @@ html {
 	min-height: 100%
 }
 
-
-.container-big {
-	
+.page-header{
 	top: 0;
 	left: 0;
-	width: 100%;
+	/*width: 100%;*/
+	/*min-width: 1400px;*/
 	height: 90px;
 	background: url(image/bg_el.png) ;
 	border-bottom: 7px white solid;
 	box-shadow: 0 2px 1px #c4c4c4; 
+}
+.container-big {
+	max-width: 1200px;
+	/*min-width: 960px; */
+	margin:0 auto;
+
 }
 .header-logo-link {
 	position: relative;
@@ -97,6 +102,7 @@ background: url(image/gh_hv.png) no-repeat;
 	margin-top: -20px;
 	height: 61px;
 	width: 100%;
+	min-width: 1400px;
 background: rgb(252,252,252); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(252,252,252,1) 46%, rgba(242,242,242,1) 100%, rgba(242,242,242,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(46%,rgba(252,252,252,1)), color-stop(100%,rgba(242,242,242,1)), color-stop(100%,rgba(242,242,242,1))); /* Chrome,Safari4+ */
