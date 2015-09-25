@@ -1,6 +1,6 @@
 .sidebar {
 	float: left;
-	margin-top: 33px;
+	margin-top: 0px;
 }
 .navigation, .navigation-item {
 	text-decoration: none;
@@ -11,19 +11,24 @@
 	color: #727070;
 	text-shadow: 0 1px 4px #fff;
 	font-family:open_sans_semibold;
-	font-size: 1.6em;
+	font-size: 1.25em;
 }
 .navigation-item:first-child {
 		border-radius: 5px 5px 0 0 ;
+
+  box-shadow: inset rgba(252,255,255,.7) 0 0.5px 3px;
 }
 .navigation-item:last-child {
 		border-radius: 0 0 5px 5px ;
 }
 
 .navigation-item {
+
+	 -moz-box-sizing: border-box;
+       box-sizing: border-box;
 	top:0;
-	padding-top: 18px;
-	padding-left: 30px;
+	padding-top: 12px;
+	padding-left: 29px;
 	width: 250px;
 	height: 55px;
 	border: 1px solid #c5c5c5;
@@ -66,16 +71,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ce7cd', end
 
 .contacts {
 	float: left;
-	margin-top: 35px;
+	margin-top: 22px;
 }
 
 .contacts-header {
+ -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  box-shadow: inset rgba(252,255,255,.7) 0 0.5px 3px;
 	color: #c99332;
 	text-shadow: 0 0.5px 2px #fff;
 	font-family:open_sans_semibold;
-	font-size: 1.6em;
-	padding-top: 13px;
-	padding-left:30px;
+	font-size: 1.2em;
+	padding-top: 5px;
+	padding-left:27px;
 	margin-left: 41px;
 	border-radius: 5px 5px 0 0 ;
 	/*??width: 250px;*/
@@ -97,10 +105,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4cc7e', end
 	text-decoration: none;
 	color: #727070;
 	font-family:open_sans_regular;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	text-align: right;
 	float: left;
-	margin-top: -30px;
+	margin-top: -25px;
 	margin-left: 80px;
 
 
@@ -115,10 +123,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4cc7e', end
 left: 40px;
 }
 .contacts-item {
+	 -moz-box-sizing: border-box;
+       box-sizing: border-box;
 	/*padding-left: 40px;*/
 	padding-top: 13px;
 	list-style: none;
-	width: 280px;
+	width: 250px;
 	height: 37px;
 	border: 1px solid #d6d5d3;
 	background: rgb(251,251,251); /* Old browsers */
@@ -152,26 +162,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffffe', end
 
 .icon-mail{
 	margin-top: -10px;
-	margin-left: -10px;
-	width: 70px;
-	height: 40px;
+	margin-left: 0px;
+	width: 60px;
+	height: 30px;
 		background: url(image/mail.png) left no-repeat;
-	background-size: 70px 40px;
+	background-size: 60px 43px;
 }
 .icon-phone{
 	margin-top: -10px;
-	margin-left: -10px;
-	width: 70px;
-	height: 40px;
+	margin-left: 0px;
+	width: 60px;
+	height: 30px;
 		background: url(image/phone.png) left no-repeat;
-	background-size: 70px 40px;
+	background-size: 60px 30px;
 }
 .icon-skype{
-	margin-top: -10px;
-	margin-left: -10px;
-	width: 70px;
-	height: 40px;
+	margin-top: -11px;
+	margin-left: 0px;
+	width: 61px;
+	height: 35px;
 		background: url(image/skype.png) left no-repeat;
-	background-size: 70px 40px;
+	background-size: 61px 35px;
 }
 
