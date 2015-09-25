@@ -1,0 +1,17 @@
+{
+  "name": "dz",
+  "version": "1.0.0",
+  "description": ">Инструкция по установке моего приложения",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.9.6",
+    "gulp": "^3.9.0",
+    "modernizr": "^3.0.0",
+    "wiredep": "^2.2.2"
+  }
+}

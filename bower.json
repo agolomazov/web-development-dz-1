@@ -1,0 +1,22 @@
+{
+  "name": "dz",
+  "version": "0.1.0",
+  "authors": [
+    "6thSence <d.pushkarskaya.pr@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "normalize-css": "normalize.css#~3.0.3",
+    "tooltipster": "~3.3.0"
+  }
+}

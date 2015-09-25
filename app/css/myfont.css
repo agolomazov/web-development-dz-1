@@ -1,0 +1,42 @@
+
+@import url(open_sans.css); 
+.open_sans_bold {
+	font-family: open_sans_bold;
+	text-align: center;
+}
+.open_sans_bold_italic {
+	font-family: open_sans_bold_italic;
+	text-align: center;
+}
+.open_sans_extra_bold {
+	font-family: open_sans_extra_bold;
+	text-align: center;
+}
+.open_sans_extra_bold_italic {
+	font-family: open_sans_extra_bold_italic;
+	text-align: center;
+}
+.open_sans_italic {
+	font-family: open_sans_italic;
+	text-align: center;
+}
+.open_sans_light {
+	font-family: open_sans_light;
+	text-align: center;
+}
+.open_sans_light_italic {
+	font-family: open_sans_light_italic;
+	text-align: center;
+}
+.open_sans_regular {
+	font-family: open_sans_regular;
+	text-align: center;
+}
+.open_sans_semibold {
+	font-family: open_sans_semibold;
+	text-align: center;
+}
+.open_sans_semibold_italic {
+	font-family: open_sans_semibold_italic;
+	text-align: center;
+}
