@@ -53,12 +53,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8a7a7', end
 .avatar {
 	width: 130px;
 	height: 130px;
+}
+.avatar-box{
+	overflow: hidden;
+	width: 130px;
+	height: 130px;
 	border-radius: 50%;
 	border: 9px solid #f5f4f2;
 	box-shadow: 0 0 0.5px #000;
+}
+.image-wrap{
+
 	margin-top: 20px;
 	margin-left: 40px;
 }
+
 
 .image-wrap {
 	float: left;

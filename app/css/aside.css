@@ -5,8 +5,10 @@
 .navigation, .navigation-item {
 	text-decoration: none;
 	list-style: none;
+	overflow: hidden;
 }
 .navigation-link {
+	display: block;
 	text-decoration: none;
 	color: #727070;
 	text-shadow: 0 1px 4px #fff;

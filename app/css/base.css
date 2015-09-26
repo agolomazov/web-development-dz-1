@@ -7,6 +7,19 @@
 .clearfix:after {
 	clear: both;
 }
+.container{
+	padding-top: 18px;
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+
 body {
 	background: url(image/bg.png) no-repeat;
 	background-size: cover;
@@ -24,8 +37,8 @@ html {
 .page-header{
 	top: 0;
 	left: 0;
-	/*width: 100%;*/
-	/*min-width: 1400px;*/
+	width: 100%;
+	min-width: 980px;
 	height: 90px;
 	background: url(image/bg_el.png) ;
 	border-bottom: 7px white solid;
@@ -33,7 +46,7 @@ html {
 }
 .container-big {
 	max-width: 1200px;
-	/*min-width: 960px; */
+	min-width: 960px; 
 	margin:0 auto;
 
 }
@@ -98,11 +111,13 @@ background: url(image/gh_hv.png) no-repeat;
 	height: 61px;
 	display: block;
 }
+
 .page-footer{
+
 	margin-top: -20px;
 	height: 61px;
 	width: 100%;
-	min-width: 1400px;
+	min-width: 980px;
 background: rgb(252,252,252); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(252,252,252,1) 46%, rgba(242,242,242,1) 100%, rgba(242,242,242,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(46%,rgba(252,252,252,1)), color-stop(100%,rgba(242,242,242,1)), color-stop(100%,rgba(242,242,242,1))); /* Chrome,Safari4+ */
@@ -112,13 +127,12 @@ background: -ms-linear-gradient(top, rgba(252,252,252,1) 46%,rgba(242,242,242,1)
 background: linear-gradient(to bottom, rgba(252,252,252,1) 46%,rgba(242,242,242,1) 100%,rgba(242,242,242,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
 }
-.container{
-	padding-top: 18px;
-	width: 1000px;
-	margin: 0 auto;
-}
-.lock {
-float: left;
+
+.page-footer .lock {
+/*float: left;*/
+position: absolute;
+top:26px;
+left: 20px;
 width: 70px;
 height: 20px;
 }
@@ -149,7 +163,7 @@ opacity: 0.5;
 }
 .copyright {
 	text-align: center;
-	margin-top:3px;
+	margin:3px 180px;
 	vertical-align:inherit;
 	font-family: OpenSans-Light.ttf;
 	font-size: 1em;
