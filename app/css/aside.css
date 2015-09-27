@@ -13,7 +13,7 @@
 	color: #727070;
 	text-shadow: 0 1px 4px #fff;
 	font-family:open_sans_semibold;
-	font-size: 1.25em;
+	font-size: 1.3em;
 }
 .navigation-item:first-child {
 		border-radius: 5px 5px 0 0 ;
@@ -83,8 +83,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ce7cd', end
 	color: #c99332;
 	text-shadow: 0 0.5px 2px #fff;
 	font-family:open_sans_semibold;
-	font-size: 1.2em;
-	padding-top: 5px;
+	font-size: 1.3em;
+	padding-top: 6px;
 	padding-left:27px;
 	margin-left: 41px;
 	border-radius: 5px 5px 0 0 ;
@@ -107,7 +107,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4cc7e', end
 	text-decoration: none;
 	color: #727070;
 	font-family:open_sans_regular;
-	font-size: 0.7em;
+	font-size: 0.8em;
 	text-align: right;
 	float: left;
 	margin-top: -25px;
