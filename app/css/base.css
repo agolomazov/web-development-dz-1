@@ -9,7 +9,7 @@
 }
 .container{
 	padding-top: 18px;
-	width: 960px;
+	width: 1000px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -38,7 +38,7 @@ html {
 	top: 0;
 	left: 0;
 	width: 100%;
-	min-width: 980px;
+	min-width: 960px;
 	height: 90px;
 	background: url(image/bg_el.png) ;
 	border-bottom: 7px white solid;
@@ -52,7 +52,7 @@ html {
 }
 .header-logo-link {
 	position: relative;
-	margin-left: 85px;
+	margin-left: 28px;
 }
 .header-logo-text {
 	/*margin-left: -600px;*/
@@ -69,7 +69,7 @@ html {
 .socials{
 	float: right;
 	margin-top: 24px;
-	margin-right: 21px;
+	margin-right: -40px;
 }
 .socials-link {
 	display: inline-block;
@@ -113,11 +113,13 @@ background: url(image/gh_hv.png) no-repeat;
 }
 
 .page-footer{
-
+	 -moz-box-sizing: border-box;
+       box-sizing: border-box;
 	margin-top: -20px;
 	height: 61px;
 	width: 100%;
 	min-width: 980px;
+padding-top: 0px;
 background: rgb(252,252,252); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(252,252,252,1) 46%, rgba(242,242,242,1) 100%, rgba(242,242,242,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(46%,rgba(252,252,252,1)), color-stop(100%,rgba(242,242,242,1)), color-stop(100%,rgba(242,242,242,1))); /* Chrome,Safari4+ */
@@ -131,16 +133,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
 .page-footer .lock {
 /*float: left;*/
 position: absolute;
-top:26px;
-left: 20px;
+top:20px;
+left: 35px;
 width: 70px;
 height: 20px;
+padding-left: 180px;
 }
 .lock-inner{
 display: inline-block;
+/*display: none;*/
 background: url(image/locked.png) no-repeat;
 width: 23px;
 height: 20px;
+margin-right: 0px;
 }
 .lock-inner:hover{
 background: url(image/unlocked.png) no-repeat;
@@ -153,7 +158,7 @@ color: #9c9c9c;
 text-align: left;
 vertical-align: super;
 font-family: OpenSans-Bold.ttf;
-font-size: 1.2em;
+font-size: 0.9em;
 }
 .lock-inner-text:hover {
 
@@ -166,7 +171,7 @@ opacity: 0.5;
 	margin:3px 180px;
 	vertical-align:inherit;
 	font-family: OpenSans-Light.ttf;
-	font-size: 1em;
+	font-size: 0.7em;
 	color: #9c9c9c;	
 }
 
