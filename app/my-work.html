@@ -162,17 +162,15 @@
   						
             <div id="element_to_pop_up">
 	<form method="POST" id="feedback-form">
-				<p class="name-in">Имя</p>
-					<input class="name-input" type="text" name="name" required placeholder="Как к вам обращаться" x-autocompletetype="name">
-				<p class="email-in">Email</p>
-				<input class="email-input" type="text" name="email" required placeholder="Куда мне писать" x-autocompletetype="name">
-				<p class="email-in">Сообщение</p>
-				<textarea class="message" name="message" required rows="5"></textarea>
-				<p class="email-in">Введите код, указанный на картинке</p>
-				<img src="css/image/kapcha.png" alt="" class="kapcha">
-				<input class="kapcha-input" type="text" name="kapcha" required placeholder="Введите код" x-autocompletetype="name">
-				<input type="submit" value="Отправить">
-				<input type="reset" value="Очистить">
+				<p class="pro-name-in">Название проекта</p>
+					<input class="pro-name-input" type="text" name="pro-name" required placeholder="Введите название" x-autocompletetype="pro-name">
+				<p class="image-in">Картинка проекта</p>
+				<input class="image-input" type="File" name="image" required placeholder="Загрузите изображение" x-autocompletetype="image">
+				<p class="url-in">URL проекта</p>
+				<input class="url-input" type="text" name="url" required placeholder="Добавьте ссылку" x-autocompletetype="url">
+				<p class="about-in">Описание</p>
+				<textarea class="about-input" name="about" required rows="5"></textarea>
+				<input type="submit" value="Добавить">
 				</form>
             </div>
   							<!-- шаблон -->
