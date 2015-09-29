@@ -91,3 +91,36 @@ display: -moz-inline-stack;
 	font-size: 0.8em;
 	margin:5px;
 }
+
+
+
+/* Добавить проект */
+.works-item.add-works {
+	position: relative;
+	min-height: 132px;
+	/*display: none;*/
+	background: rgb(254,254,253); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(254,254,253,1) 0%, rgba(244,242,241,1) 50%, rgba(236,234,233,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,254,253,1)), color-stop(50%,rgba(244,242,241,1)), color-stop(100%,rgba(236,234,233,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(254,254,253,1) 0%,rgba(244,242,241,1) 50%,rgba(236,234,233,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(254,254,253,1) 0%,rgba(244,242,241,1) 50%,rgba(236,234,233,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(254,254,253,1) 0%,rgba(244,242,241,1) 50%,rgba(236,234,233,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(254,254,253,1) 0%,rgba(244,242,241,1) 50%,rgba(236,234,233,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefd', endColorstr='#eceae9',GradientType=0 ); /* IE6-9 */
+}
+.add-works-content {
+	width: 100%;
+	height: 130px;
+background:url(image/add-works.png) no-repeat;
+background-position: 50% 45%;
+}
+.add-works-p {
+	position: absolute;
+	left: 20px;
+	top:85px;
+	color: #727070;
+	font-family: open_sans_semibold;
+	font-size: 0.9em;
+}
+
+/*Добавить проект закончился*/
