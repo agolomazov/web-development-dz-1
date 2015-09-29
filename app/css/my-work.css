@@ -1,5 +1,5 @@
 .aboutbox-body.my-work {
-	min-height: 785px;
+	min-height: 786px;
 	height: 100%;
 	padding-top: 35px;
 }
@@ -16,6 +16,7 @@
 }
 .works-list, .works-item {
 	display: inline-block;
+display: -moz-inline-stack;
 	text-decoration: none;
 	list-style: none;
 }
@@ -23,7 +24,7 @@
 .works-item {
 	width: 165px;
 	border-radius: 5px;
-	margin-right: 31px;
+	margin-right: 28px;
 	margin-bottom: 30px;
 	border: 2px solid #dcdcdc;
 	min-height: 200px;

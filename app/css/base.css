@@ -37,7 +37,7 @@ html {
 	min-height: 100%;
 	position: relative;
 	height: auto!important;
-	overflow:hidden;
+
 }
 
 .wrapper:after {
@@ -50,7 +50,7 @@ html {
 	top: 0;
 	left: 0;
 	width: 100%;
-	min-width: 960px;
+	min-width: 1050px;
 	height: 90px;
 	background: url(image/bg_el.png) ;
 	border-bottom: 7px white solid;
@@ -81,7 +81,7 @@ html {
 .socials{
 	float: right;
 	margin-top: 24px;
-	margin-right: -40px;
+	/*margin-right: -40px;*/
 }
 .socials-link {
 	display: inline-block;
@@ -130,7 +130,7 @@ background: url(image/gh_hv.png) no-repeat;
 	margin-top: -20px;
 	height: 61px;
 	width: 100%;
-	min-width: 980px;
+	min-width: 1050px;
 padding-top: 0px;
 background: rgb(252,252,252); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(252,252,252,1) 46%, rgba(242,242,242,1) 100%, rgba(242,242,242,1) 100%); /* FF3.6+ */
