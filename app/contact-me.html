@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="css/varible-content.css">
 	<link rel="stylesheet" href="css/aside.css">
 	<link rel="stylesheet" href="css/button.css">
-	<link rel="stylesheet" href="css/my-work.css">
+	<link rel="stylesheet" href="css/contact-me.css">
 <link href="css/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
@@ -99,8 +99,22 @@
 		<div class="varible-content">
 			<section class="aboutbox">
 				<h2 class="aboutbox-header">Обратная связь</h2>
-				<div class="aboutbox-body my-work clearfix">
-					
+				<div class="aboutbox-body contact-me clearfix">
+
+				<form method="POST" id="feedback-form">
+				<p class="name-in">Имя</p>
+					<input class="name-input" type="text" name="name" required placeholder="Как к вам обращаться" x-autocompletetype="name">
+				<p class="email-in">Email</p>
+				<input class="email-input" type="text" name="email" required placeholder="Куда мне писать" x-autocompletetype="name">
+				<p class="email-in">Сообщение</p>
+				<textarea class="message" name="message" required rows="5"></textarea>
+				<p class="email-in">Введите код, указанный на картинке</p>
+				<img src="css/image/kapcha.png" alt="" class="kapcha">
+				<input class="kapcha-input" type="text" name="kapcha" required placeholder="Введите код" x-autocompletetype="name">
+				<input type="submit" value="Отправить">
+				<input type="reset" value="Очистить">
+				</form>
+
 				</div>
 			</section>
 
