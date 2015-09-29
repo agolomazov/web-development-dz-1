@@ -153,12 +153,28 @@
   								</div>
   							</li>
   							<li class="works-item add-works">
-  							<a href="#" class="add-works-link">
+  							<a href="#" class="add-works-link" id="my-popup">
   								<div class="content-works-item add-works-content">
   								<p class="add-works-p">Добавить проект</p>
   								</div>
   							</a>
   							</li>
+  						
+            <div id="element_to_pop_up">
+	<form method="POST" id="feedback-form">
+				<p class="name-in">Имя</p>
+					<input class="name-input" type="text" name="name" required placeholder="Как к вам обращаться" x-autocompletetype="name">
+				<p class="email-in">Email</p>
+				<input class="email-input" type="text" name="email" required placeholder="Куда мне писать" x-autocompletetype="name">
+				<p class="email-in">Сообщение</p>
+				<textarea class="message" name="message" required rows="5"></textarea>
+				<p class="email-in">Введите код, указанный на картинке</p>
+				<img src="css/image/kapcha.png" alt="" class="kapcha">
+				<input class="kapcha-input" type="text" name="kapcha" required placeholder="Введите код" x-autocompletetype="name">
+				<input type="submit" value="Отправить">
+				<input type="reset" value="Очистить">
+				</form>
+            </div>
   							<!-- шаблон -->
 <!--   							<li class="works-item">
   								<div class="content-works-item">
@@ -204,8 +220,10 @@
 
 
 
+ 
 	<!-- bower:js -->
-	<script src='bower_components/jquery/dist/jquery.js'></script>
+	<script src='bower_components/jquery/dist/jquery.js'></script>   
+	<script src="bower_components/bPopup/jquery.bpopup.min.js"></script>
 	<script src='bower_components/bootstrap/dist/js/bootstrap.js'></script>
 	<script src='bower_components/tooltipster/js/jquery.tooltipster.min.js'></script>
 	<!-- endbower -->
@@ -214,5 +232,6 @@
 
 	<!--?-->
 	<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
 </body>
 </html>
