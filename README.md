@@ -2,5 +2,6 @@
 
 1. git clone https://github.com/6thSence/Tamplate.git site
 2. cd site
-3. bower init
-4. npm init
+3. npm install
+4. bower install
+5. gulp
