@@ -1,6 +1,6 @@
 .aboutbox-body.contact-me{
 	height: 780px;
-	padding-top: 5px;
+	padding-top: 15px;
 
 }
 .back-form{
@@ -25,7 +25,8 @@ margin-right: 19px;
 }
 .back-text-div.right{
 position: relative;
-/*top: 14px;*/
+top: -85px;
+left: 211px;
 width: 192px;
 /*float: right;*/
 /*overflow: hidden;*/
@@ -54,7 +55,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfcfd', end
 }
 .back-massage-div {
 	position: relative;
-	top: 8px;
+	top: -88px;
 }
 .input.big {
 	position: relative;
@@ -65,7 +66,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfcfd', end
 	 margin-bottom: -20px;
 	 padding-top: 7px;
 }
-
+.kapcha-div{
+	margin-top: -81px;
+}
 .kapcha-div-img {
 	border-radius: 5px;
 	border: 1px solid #d6d5d3;
