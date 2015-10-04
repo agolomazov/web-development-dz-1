@@ -37,7 +37,9 @@ width: 192px;
 }
 
 .input{
-
+		color: #c7c6c6;
+	font-family: open_sans_semibold;
+	font-size: 0.7em;
 	display: inline-block;
 	height: 37px;
 	width: 180px;
