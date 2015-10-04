@@ -97,21 +97,36 @@
 	<!-- Правая колонка -->
 		<div class="varible-content">
 			<section class="aboutbox">
-				<h2 class="aboutbox-header">Обратная связь</h2>
+				<h2 class="aboutbox-header">У вас интересный проект? Напишите мне</h2>
 				<div class="aboutbox-body contact-me clearfix">
 
-				<form method="POST" id="feedback-form">
-				<p class="name-in">Имя</p>
-					<input class="name-input" type="text" name="name" required placeholder="Как к вам обращаться" x-autocompletetype="name">
-				<p class="email-in">Email</p>
-				<input class="email-input" type="text" name="email" required placeholder="Куда мне писать" x-autocompletetype="name">
-				<p class="email-in">Сообщение</p>
-				<textarea class="message" name="message" required rows="5"></textarea>
-				<p class="email-in">Введите код, указанный на картинке</p>
-				<img src="css/image/kapcha.png" alt="" class="kapcha">
-				<input class="kapcha-input" type="text" name="kapcha" required placeholder="Введите код" x-autocompletetype="name">
-				<input type="submit" value="Отправить">
-				<input type="reset" value="Очистить">
+				<form method="POST" id="feedback-form" class="back-form">
+
+				<div class="back-text-div left">
+				<p class="back-text  ">Имя</p>
+				<input class="input first" type="text" name="name" required placeholder="Как к вам обращаться" x-autocompletetype="name">
+				</div>
+
+				<div class="back-text-div right">
+				<p class="back-text   ">Email</p>
+				<input class="input first" type="text" name="email" required placeholder="Куда мне писать" x-autocompletetype="name">
+				</div>
+
+				<div class="back-massage-div">
+				<p class="back-text">Сообщение</p>
+				<textarea class="input big " name="message" required rows="5" placeholder="Кратко в чем суть"></textarea>
+				</div>
+				
+				<div class="kapcha-div">
+				<p class="back-text">Введите код, указанный на картинке</p>
+				<div class="kapcha-div-img">
+				<img src="css/image/kapcha.png" alt="" class="kapcha"></div>
+				<input class="input code" type="text" name="kapcha" required placeholder="Введите код" x-autocompletetype="name">
+				</div>
+				<div class="buttons">
+				<input class="sub" type="submit" value="Отправить">
+				<input class="sub res" type="reset" value="Очистить">
+				</div>
 				</form>
 
 				</div>
