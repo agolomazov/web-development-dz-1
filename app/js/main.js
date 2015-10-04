@@ -21,6 +21,9 @@ $( function(){
           val =$this.val().slice(12),
           fileNameField = $('.input-file-name');
           fileNameField.text(val);
+          if(val=="") {
+            fileNameField.text("Загрузите изображение");
+          }
                  });
 
 });
