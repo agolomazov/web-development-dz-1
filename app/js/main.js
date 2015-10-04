@@ -16,5 +16,12 @@ $( function(){
             });
 
 
+    $('.input-file__element').on('change', function(){
+      var $this = $(this),
+          val =$this.val().slice(12),
+          fileNameField = $('.input-file-name');
+          fileNameField.text(val);
+                 });
+
 });
 
