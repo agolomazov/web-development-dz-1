@@ -1,11 +1,12 @@
 var myModule = (function(){
 
-
+  //инициализация метода
   var init = function () {
     _setUpListners();
     //то, что должно произойти сразу
   };
 
+  // отслеживаем события
   var _setUpListners = function() {
     $('#my-popup').bind('click',_showPop);
     $('.input-file__element').on('change', _changeNameFile);
@@ -13,6 +14,7 @@ var myModule = (function(){
     //прослушка событий
   };
 
+  //работа с модальным окном
   var _showPop = function(e){
       e.preventDefault(); // отменяет стандартное поведение елемента
       var divPopup =$('#element_to_pop_up'),
@@ -24,11 +26,13 @@ var myModule = (function(){
           modalColor: '#696662',
           onClose: function(){
             form.find('.server-mes').text('').hide();
-          }
+           var ar = form.find('input');
+            ar[0].value=ar[1].value=ar[2].value='';
+               }
         });
   };
 
-
+  //изменение имя файла в отображении
   var _changeNameFile = function () {
    var $this = $(this),
           val =$this.val().slice(12),
@@ -37,6 +41,7 @@ var myModule = (function(){
     if(val=="") {fileNameField.text("Загрузите изображение");}
   };
 
+  //добавляем проект
   var _addProject = function (e) {
      e.preventDefault();
      var form = $(this),
@@ -56,6 +61,7 @@ var myModule = (function(){
             })
     };
 
+  //функция ajax для отправки данных из формы на сервер
   var _ajaxForm = function (form, url) {
 
     // if (!valid) retunr false;
@@ -71,10 +77,11 @@ var myModule = (function(){
                  form.find('.error-mes').text('На сервере произошла ошибка').show();
                  form.find('.success-mes').hide();
                  });
-      
+                 console.log(data);
           return result;
   };
 
+  //публичные методы и то что возвращает модуль
   return {
     init:init
   }
