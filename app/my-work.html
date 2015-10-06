@@ -160,23 +160,25 @@
   							</li>
   						
             <div id="element_to_pop_up">
-	<form method="POST" id="feedback-form">
+	<form method="POST" id="add-new-project" class="form">
+			<div class="server-mes error-mes"></div>
+			<div class="server-mes success-mes"></div>
 				<p class="add-text">Название проекта</p>
-					<input class="input" type="text" name="pro-name" required placeholder="Введите название" x-autocompletetype="pro-name">
+					<input class="input" type="text" name="pro-name" placeholder="Введите название" x-autocompletetype="pro-name">
 				<p class="add-text">Картинка проекта</p>
 
 
 				<label for="" class ="input file-label" placeholder="Загрузите изображение"> <div class="input-file-name">Загрузите изображение</div>
-				<input class="input-file__element" type="File" name="image" required placeholder="Загрузите изображение" x-autocompletetype="image">
+				<input class="input-file__element" type="File" name="image"  placeholder="Загрузите изображение" x-autocompletetype="image">
 				<div class="button-file-wrapper"> 
 				<div class="button-file"></div></div>
 				</label>
 
 
 				<p class="add-text">URL проекта</p>
-				<input class="input" type="text" name="url" required placeholder="Добавьте ссылку" x-autocompletetype="url">
+				<input class="input" type="text" name="url"  placeholder="Добавьте ссылку" x-autocompletetype="url">
 				<p class="add-text">Описание</p>
-				<textarea class="input big" name="about"  rows="5" required placeholder="Пару слов о Вашем проекте"></textarea>
+				<textarea class="input big" name="about"  rows="5"  placeholder="Пару слов о Вашем проекте"></textarea>
 				<input class="sub current" type="submit" value="Добавить">
 				</form>
             </div>

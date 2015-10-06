@@ -245,3 +245,28 @@ background: -ms-linear-gradient(top, rgba(124,231,205,1) 0%,rgba(95,209,181,1) 4
 background: linear-gradient(to bottom, rgba(124,231,205,1) 0%,rgba(95,209,181,1) 47%,rgba(65,185,155,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ce7cd', endColorstr='#41b99b',GradientType=0 ); /* IE6-9 */
 }
+
+.server-mes{
+	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	height: auto;
+	padding: 5px; 
+	border-radius: 5px;
+	border: 1px solid #cb6945;
+	font-family: open_sans_semibold;
+	display: none;
+	margin-top: 10px;
+}
+.server-mes.error-mes {
+	background: #e9c8bc;
+	color: #cb6945;
+	border: 1px solid #cb6945;
+}
+.server-mes.success-mes {
+	background: #c6e9bc;
+	color: #63cc45;
+	border: 1px solid #63cc45;
+}
