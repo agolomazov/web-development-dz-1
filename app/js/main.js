@@ -1,30 +1,48 @@
-$( function(){
-	console.log("Workin from main.js!");
+var myModule = (function(){
 
-   $('#my-popup').bind('click', function(e) {
 
-                e.preventDefault();
+  var init = function () {
+    _setUpListners();
+    //то, что должно произойти сразу
+  };
 
-               
-                // $('#element_to_pop_up').bPopup();
-                     $('#element_to_pop_up').bPopup({
-           speed: 650,
-            transition: 'slideIn',
-	    transitionClose: 'slideBack',
-            modalColor: '#696662'
+
+
+  var _setUpListners = function() {
+    $('#my-popup').bind('click',_showPop);
+    $('.input-file__element').on('change', _changeNameFile);
+    //прослушка событий
+  };
+
+
+
+  var _showPop = function(e){
+      e.preventDefault(); // отменяет стандартное поведение елемента
+      $('#element_to_pop_up').bPopup({
+          speed: 650,
+          transition: 'slideIn',
+          transitionClose: 'slideBack',
+          modalColor: '#696662'
         });
-            });
+  };
 
 
-    $('.input-file__element').on('change', function(){
-      var $this = $(this),
+
+  var _changeNameFile = function () {
+   var $this = $(this),
           val =$this.val().slice(12),
           fileNameField = $('.input-file-name');
           fileNameField.text(val);
-          if(val=="") {
-            fileNameField.text("Загрузите изображение");
-          }
-                 });
+    if(val=="") {fileNameField.text("Загрузите изображение");}
+  };
 
-});
+
+
+  return {
+    init: init
+  }
+
+})();
+
+myModule.init();
 
