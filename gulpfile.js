@@ -10,7 +10,7 @@ gulp.task('bower', function () {
   //     derictory: "app/bower_components"
   //   }))
   //   .pipe(gulp.dest('./app'));
-  gulp.src('./app/contact-me.html')
+  gulp.src('./app/*.html')
     .pipe(wiredep({
       derictory: "app/bower_components"
     }))
