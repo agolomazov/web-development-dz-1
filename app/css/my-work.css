@@ -66,6 +66,7 @@ display: -moz-inline-stack;
 }
 .wrap-img:hover .img-works{
 	opacity: 0.3;
+	filter: alpha(opacity=0.3);
 }
 .wrap-img:hover .works-link{
 	display: block;
