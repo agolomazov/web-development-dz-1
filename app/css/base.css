@@ -20,6 +20,7 @@
 	float: right;
 }
 
+
 body {
 	background: url(image/bg.png) no-repeat;
 	background-size: cover;
@@ -27,7 +28,9 @@ body {
 	height: 100%;
 	background-attachment: fixed;
 }
-
+.no-cssgradient body {
+	background-size: 100%;
+}
 html {
 	min-height: 100%;
 	height: 100%;
@@ -194,6 +197,10 @@ opacity: 0.5;
 }
 
 .qtip-myclass {
+	/*display: inline-block;*/
+	position: absolute;
+	top: -15px;
+	left: 0px;
 	font-family: open_sans_semibold;
 	font-size: 0.7em;
 	color: #9a4e32;	

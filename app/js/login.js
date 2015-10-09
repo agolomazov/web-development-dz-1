@@ -2,7 +2,7 @@ var login = (function(){
 
 	var init = function () {
 		_setUpListners();
-		console.log("Workin from login.js!");
+	
 	};
 
 	var _setUpListners = function() {
@@ -10,7 +10,7 @@ var login = (function(){
 	};
 
 	var _submitForm = function(e) {
-		console.log('отправка формы');
+	
 		e.preventDefault();
 
 		var form = $(this),
@@ -22,7 +22,7 @@ var login = (function(){
 
 //функция ajax для отправки данных из формы на сервер
   var _ajaxForm = function (form, url) {
-		console.log('ajax запрос, но с проверкой!');
+	
 
     if (!validation.validateForm(form)) return false;
     // Если false то код ниже не произодет никгда
@@ -34,11 +34,11 @@ var login = (function(){
                  dataType: 'json',
                  data: data,
                  }).fail(function(ans) {
-                 console.log('Проблемы в PHP');
+                 
                  form.find('.error-mes').text('На сервере произошла ошибка').show();
                  form.find('.success-mes').hide();
                  });
-                 console.log(data);
+        
     return result;
   };
 

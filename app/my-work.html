@@ -209,8 +209,14 @@
 <!-- POPUP -->
 <div id="element_to_pop_up">
 	<form method="POST" id="add-new-project" class="form">
-		<div class="server-mes error-mes"></div>
-		<div class="server-mes success-mes"></div>
+		<div class="server-mes error-mes">
+			<span class="bold">Ошибка!</span>
+			<span class="">Невозможно добавить проект.</span>
+		</div>
+		<div class="server-mes success-mes">
+			<span class="bold">Ура!</span>
+			<span class="">Проект успешно добавлен.</span>
+		</div>
 		<p class="add-text">Название проекта</p>
 		<input class="input" type="text" name="pro-name" placeholder="Введите название" x-autocompletetype="pro-name" qtip-position="left"	qtip-content="введите название">
 		<p class="add-text">Картинка проекта</p>
@@ -242,7 +248,7 @@
 	<script src="js/main.js"></script>
 	<script src="js/popup.js"></script>
 	<script src="js/validation.js"></script>
-	<script src="js/my_work.js"></script>
+	<script src="js/add_project.js"></script>
 
 	<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 <!-- END:script -->

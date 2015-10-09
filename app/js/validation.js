@@ -2,7 +2,7 @@ var validation = (function(){
 	// Инициализирует наш модуль
     var init = function () {
         _setUpListners();
-        console.log("Workin from validation.js!");
+      
     };  
 
    
@@ -57,7 +57,6 @@ var validation = (function(){
 
     // Универсальная функция
     var validateForm =  function(form) {
-    	console.log('Привет! я в модуле валидации, проверяю форму!');
     	var elements = form.find('input,textarea').not('input[type="file"], input[type="hidden"]'),
     		valid = true;
 
@@ -66,7 +65,7 @@ var validation = (function(){
     		var element = $(val),
     			val = element.val(),
     			pos = element.attr('qtip-position');
-    		console.log(element,val,pos);
+
 	    	if (val.length === 0) {
 	    	 	_createQtip(element,pos);
 	    	 	element.addClass('error');
@@ -78,7 +77,7 @@ var validation = (function(){
     };
 
     var clearFormReset = function (form) {
-    	console.log('я очищаю форму');
+
 		var 
 			form = $(this),
 			elements =form.find('input,textarea');

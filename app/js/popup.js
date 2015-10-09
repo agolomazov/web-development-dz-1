@@ -2,7 +2,6 @@ var myModule = (function(){
 
   //инициализация метода
   var init = function () {
-    console.log("Workin from popup.js!");
     _setUpListners();
   };
 
