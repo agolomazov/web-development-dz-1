@@ -14,10 +14,13 @@
 	<!-- bower:css -->
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
 	<link rel="stylesheet" href="bower_components/tooltipster/css/tooltipster.css" />
+	<link rel="stylesheet" href="bower_components/qtip2/jquery.qtip.css" />
+	<link rel="stylesheet" href="bower_components/qtip2/basic/jquery.qtip.css" />
 	<!-- endbower -->
+	<script src='bower_components/modernizr/modernizr.js'></script>
 	<link rel="stylesheet" href="css/font-family.css">
-	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/base.css">
 <link href="css/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
@@ -37,14 +40,16 @@
 				<label for="" class ="label-login" >
 				<div class="button-login-wrapper email"> </div>
 
-				<input class="input-login" type="text" name="image" required placeholder="Введите Email" x-autocompletetype="image">
+				<input class="input-login" type="text" name="image" placeholder="Введите Email" x-autocompletetype="image" qtip-position="right" 
+					qtip-content="введите email">
 
 				</label>	
 
 				<label for="" class ="label-login" >
 
 				<div class="button-login-wrapper password"></div>
-				<input class="input-login" type="password" name="image" required placeholder="Введите пароль" x-autocompletetype="image">
+				<input class="input-login" type="password" name="image" placeholder="Введите пароль" x-autocompletetype="image" qtip-position="right" 
+					qtip-content="введите пароль">
 
 				</label>
 
@@ -52,7 +57,7 @@
 				<input type="checkbox"  class="checkbox" /><label class="checkbox-label">Запомнить меня?</label></div>
 
 				
-				<input class="sub" type="submit" value="Войти">
+				<button class="sub" type="submit" value="Войти">Войти</button>
 				</form>
             </div>
 
@@ -87,7 +92,8 @@
 	<script src='bower_components/qtip2/basic/jquery.qtip.js'></script>
 	<!-- endbower -->
 	<script src="js/main.js"></script>
-	<script src="js/plugins.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/login.js"></script>
 
 	<!--?-->
 	<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

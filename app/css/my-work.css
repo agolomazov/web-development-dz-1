@@ -182,9 +182,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfcfd', end
 	 padding-top: 7px;
 }
 .input.file-label{
-
 	-moz-box-sizing: border-box;
-box-sizing: border-box;
+	box-sizing: border-box;
 	color: #c7c6c6;
 	font-family: open_sans_semibold;
 	font-size: 0.7em;
@@ -202,6 +201,7 @@ left:0px;
 width: 322px;
 height: 40px;
 opacity: 0;
+filter: alpha(opacity=0);
 cursor: pointer;
 /*left:-9999px;*/
 }
@@ -212,7 +212,10 @@ cursor: pointer;
 	width: 50px;
 	height: 38px;
 	float: right;
-	background: rgb(252,251,251); /* Old browsers */
+
+}
+.cssgradients .button-file-wrapper{
+		background: rgb(252,251,251); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(252,251,251,1) 0%, rgba(241,239,238,1) 50%, rgba(231,229,229,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,251,251,1)), color-stop(50%,rgba(241,239,238,1)), color-stop(100%,rgba(231,229,229,1))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, rgba(252,251,251,1) 0%,rgba(241,239,238,1) 50%,rgba(231,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -221,6 +224,7 @@ background: -ms-linear-gradient(top, rgba(252,251,251,1) 0%,rgba(241,239,238,1) 
 background: linear-gradient(to bottom, rgba(252,251,251,1) 0%,rgba(241,239,238,1) 50%,rgba(231,229,229,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfbfb', endColorstr='#e7e5e5',GradientType=0 );
 }
+
 .button-file{
 width: 50px;
 	height: 100%;
