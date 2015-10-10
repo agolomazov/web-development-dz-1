@@ -21,11 +21,11 @@ var validation = (function(){
 				my: 'left center', 
 				at: 'right center'
 			};
-			}else{
-				position = {
-					my: 'right center', 
-					at: 'left center'				
-				};
+		}else{
+			position = {
+				my: 'right center', 
+				at: 'left center',
+			};
 		};
 		//инициализация тултипа
 		element.qtip({
@@ -45,12 +45,11 @@ var validation = (function(){
 				effect: function(offset) {
 		            $(this).slideUp(100); 
 		        }
-
 			},
-			position : position,
-
+			position:position,
 			style: {
-				classes: 'qtip-rounded qtip-myclass'
+				// classes: 'qtip-rounded'
+				classes: 'qtip-rounded qtip-myclass',
 			}
 		}).trigger('show');
     };

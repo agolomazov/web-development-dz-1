@@ -201,10 +201,9 @@ opacity: 0.5;
 }
 
 .qtip-myclass {
-	/*display: inline-block;*/
-	position: absolute;
-	top: -15px;
-	left: 0px;
+	   position: fixed;
+    left: -10000em;
+    top: -10000em;
 	font-family: open_sans_semibold;
 	font-size: 0.7em;
 	color: #9a4e32;	
