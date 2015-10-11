@@ -3,21 +3,40 @@
 require_once 'vendor/autoload.php';
 
 $router = new \Klein\Klein();
+$templater = Templater::getInstance();
+$config = include_once 'config/config.php';
 
-$router->respond('GET', '/portfolio/?', function () {
-    return 'Страница потрфолио!';
+$router->respond('GET', '/portfolio/?', function () use ($templater, $config){
+    $data = array();
+    $data['config'] = $config;
+    $data['title'] = "Страница портфолио";
+    $data['current'] = "portfolio";
+    return $templater->display('pages/portfolio', $data);
 });
 
-$router->respond('GET', '/contacts/?', function () {
-    return 'Страница контактов!';
+$router->respond('GET', '/contacts/?', function () use ($templater, $config){
+    $data = array();
+    $data['config'] = $config;
+    $data['title'] = "Страница контактов";
+    $data['current'] = "contacts";
+    return $templater->display('pages/contacts', $data);
 });
 
-$router->respond('GET', '/auth/?', function () {
-    return 'Страница авторизации!';
+$router->respond('GET', '/auth/?', function () use ($templater, $config){
+    $data = array();
+    $data['config'] = $config;
+    $data['title'] = "Страница авторизации";
+    $data['logged'] = true;
+    return $templater->display('pages/auth', $data);
 });
 
-$router->respond('GET', '/?', function () {
-    return 'Главная страница!';
+$router->respond('GET', '/?', function () use ($templater, $config){
+    $data = array();
+    $data['config'] = $config;
+    $data['title'] = "Главная страница";
+    $data['current'] = "index";
+    return $templater->display('pages/index', $data);
+
 });
 
 $router->dispatch();

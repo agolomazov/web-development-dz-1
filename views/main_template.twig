@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+<head>
+    {% block topcss %}{% endblock %}
+    {% include '_parts/head.twig' %}
+</head>
+
+<body class="my_body">
+<!--[if lt IE 8]>
+<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">Обновите</a> его.</p>
+<![endif]-->
+
+<div class="wrapper">
+    <div class="main-content">
+
+        {% if logged is not defined %}
+            {% include '_parts/header.twig' %}
+
+            <div class="container clearfix">
+                {% include '_parts/left_sidebar.twig' %}
+
+                <!-- Правая колонка -->
+                <div class="varible-content">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        {% else %}
+            {% block authform %}{% endblock %}
+        {% endif %}
+    </div>
+</div>
+
+{% include '_parts/footer.twig' %}
+{% block popup %}{% endblock %}
+{% include '_parts/scripts.twig' %}
+{% block bottom_scripts %}{% endblock %}
+</body>
+</html>

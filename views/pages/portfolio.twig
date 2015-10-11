@@ -1,0 +1,110 @@
+{% extends 'main_template.twig' %}
+
+{% block topcss %}
+    <link rel="stylesheet" href="{{ config.base_url }}app/css/my-work.css">
+{% endblock %}
+
+{% block content %}
+    <section class="aboutbox">
+        <h2 class="aboutbox-header">Мои работы</h2>
+        <div class="aboutbox-body my-work clearfix">
+            <div class="wrapper-works">
+                <ul class="works-list">
+                    <li class="works-item">
+                        <div class="content-works-item">
+                            <div class="wrap-img">
+                                <img src="{{ config.base_url }}app/css/image/1-works.png" alt="a-industry" class="img-works">
+                                <a href="#" class="works-link">Подробнее</a>
+                            </div>
+                            <div class="head-text-works">a-indastry.ru</div>
+                            <p class="about-works">Корпоративный и в тоже время продающий сат строительной компании a-indaustry.</p>
+                        </div>
+                    </li>
+                    <li class="works-item">
+                        <div class="content-works-item">
+                            <div class="wrap-img">
+                                <img src="{{ config.base_url }}app/css/image/2-works.png" alt="домгазобетон.рф" class="img-works">
+                                <a href="#" class="works-link">Подробнее</a>
+                            </div>
+                            <div class="head-text-works">домгазобетон.рф</div>
+                            <p class="about-works">Продающая страница для компании ledenland.</p>
+                        </div>
+                    </li>
+                    <li class="works-item">
+                        <div class="content-works-item">
+                            <div class="wrap-img">
+                                <img src="{{ config.base_url }}app/css/image/3-works.png" alt="crmconsulting" class="img-works">
+                                <a href="#" class="works-link">Подробнее</a>
+                            </div>
+                            <div class="head-text-works">crmconsulting.biz</div>
+                            <p class="about-works">Лендинг компании "CRM Consulting" специализирующейся на точной настройке Битрикса24 под бизнес.</p>
+                        </div>
+                    </li>
+                    <li class="works-item">
+                        <div class="content-works-item">
+                            <div class="wrap-img">
+                                <img src="{{ config.base_url }}app/css/image/4-works.png" alt="landingsloft" class="img-works">
+                                <a href="#" class="works-link">Подробнее</a>
+                            </div>
+                            <div class="head-text-works">landingsloft.ru</div>
+                            <p class="about-works">Сайт по услугам разработки продающих лендингов.</p>
+                        </div>
+                    </li>
+                    <li class="works-item">
+                        <div class="content-works-item">
+                            <div class="wrap-img">
+                                <img src="{{ config.base_url }}app/css/image/5-works.png" alt="yasnow" class="img-works">
+                                <a href="#" class="works-link">Подробнее</a>
+                            </div>
+                            <div class="head-text-works">yasnow.biz</div>
+                            <p class="about-works">Landing page по продажи франшизы снежного бизнеса.</p>
+                        </div>
+                    </li>
+                    <li class="works-item add-works">
+                        <a href="#" class="add-works-link" id="my-popup">
+                            <div class="content-works-item add-works-content">
+                                <p class="add-works-p">Добавить проект</p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block popup %}
+    <div id="element_to_pop_up">
+        <form method="POST" id="add-new-project" class="form">
+            <div class="server-mes error-mes">
+                <span class="bold">Ошибка!</span>
+                <span class="">Невозможно добавить проект.</span>
+            </div>
+            <div class="server-mes success-mes">
+                <span class="bold">Ура!</span>
+                <span class="">Проект успешно добавлен.</span>
+            </div>
+            <p class="add-text">Название проекта</p>
+            <input class="input" type="text" name="pro-name" placeholder="Введите название" x-autocompletetype="pro-name" qtip-position="left"	qtip-content="введите название">
+            <p class="add-text">Картинка проекта</p>
+            <label for="" class ="input file-label" placeholder="Загрузите изображение" qtip-position="left" qtip-content="изображение">
+                <div class="input-file-name">Загрузите изображение</div>
+                <input class="input-file__element" type="file" name="image"  placeholder="Загрузите изображение" x-autocompletetype="image" qtip-position="left" qtip-content="изображение">
+                <div class="button-file-wrapper">
+                    <div class="button-file"></div></div>
+            </label>
+            <p class="add-text">URL проекта</p>
+            <input class="input" type="text" name="url"  placeholder="Добавьте ссылку" x-autocompletetype="url" qtip-position="left" qtip-content="ссылка на проект">
+            <p class="add-text">Описание</p>
+            <textarea class="input big" name="about"  rows="5"  placeholder="Пару слов о Вашем проекте" qtip-position="left" qtip-content="описание проекта"></textarea>
+            <button class="sub current" type="submit" value="Добавить">Добавить</button>
+        </form>
+    </div>
+{% endblock %}
+
+{%  block bottom_scripts %}
+    <script src="{{ config.base_url }}app/js/popup.js"></script>
+    <script src="{{ config.base_url }}app/js/validation.js"></script>
+    <script src="{{ config.base_url }}app/js/add_project.js"></script>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'main_template.twig' %}
+
+{% block topcss %}
+    <link rel="stylesheet" href="{{ config.base_url }}app/css/login.css">
+{% endblock %}
+
+{% block authform %}
+    <div class="login-div">
+        <form method="POST" id="login" class="login">
+
+            <label for="" class ="label-login" >
+                <div class="button-login-wrapper email"> </div>
+
+                <input class="input-login" type="text" name="image" placeholder="Введите Email" x-autocompletetype="image" qtip-position="right"
+                       qtip-content="введите email">
+
+            </label>
+
+            <label for="" class ="label-login" >
+
+                <div class="button-login-wrapper password"></div>
+                <input class="input-login" type="password" name="image" placeholder="Введите пароль" x-autocompletetype="image" qtip-position="right"
+                       qtip-content="введите пароль">
+
+            </label>
+
+            <div class="checkbox-login">
+                <input type="checkbox"  class="checkbox" /><label class="checkbox-label">Запомнить меня?</label></div>
+
+
+            <button class="sub" type="submit" value="Войти">Войти</button>
+        </form>
+    </div>
+{% endblock %}
+
+{%  block bottom_scripts %}
+    <script src="{{ config.base_url }}app/js/validation.js"></script>
+    <script src="{{ config.base_url }}app/js/login.js"></script>
+{% endblock %}
