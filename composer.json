@@ -1,0 +1,15 @@
+{
+    "name": "cesaradmin/web-d1.local",
+    "authors": [
+        {
+            "name": "Anton Golomazov",
+            "email": "agolomazov@itloft.ru"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "require": {
+        "klein/klein": "dev-master"
+    }
+}
